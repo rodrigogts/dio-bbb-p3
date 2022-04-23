@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+<form name="form-votacao" action="registrar-votacao">
+  <label *ngFor="let participante of participantes">
+    <input type="radio" name="id" [value]="participante.id"> {{participante.nome}}<br/>
+  </label>
+
+  <br/>
+  <input type="submit" value="Enviar voto">
+</form>
